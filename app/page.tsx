@@ -1,19 +1,16 @@
-import Intro from "@/components/intro.mdx";
-import SocialList from "@/components/social-list";
+import BlogContent from "@/components/blog-content";
+import { getMetadata } from "@/lib/utils";
+import type { Metadata } from "next";
+import { getPostsData } from "./server-utils";
 
-import type { Metadata } from 'next'
-import {getMetadata} from "@/lib/utils";
-
-export const metadata: Metadata = getMetadata("home")
+export const metadata: Metadata = getMetadata("home");
 
 const Home = () => {
+  return (
+    <>
+      <BlogContent posts={getPostsData()} />
+    </>
+  );
+};
 
-    return (
-        <>
-            <Intro/>
-            <SocialList/>
-        </>
-    )
-}
-
-export default Home
+export default Home;
