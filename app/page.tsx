@@ -1,16 +1,13 @@
-import BlogContent from "@/components/blog-content";
 import { getMetadata } from "@/lib/utils";
 import type { Metadata } from "next";
 import { getPostsData } from "./server-utils";
 
 export const metadata: Metadata = getMetadata("home");
 
-const Home = () => {
-  return (
-    <>
-      <BlogContent posts={getPostsData()} />
-    </>
-  );
+const Home = async () => {
+  const posts = await getPostsData();
+  console.log(posts);
+  return <>{/* <BlogContent posts={getPostsData()} /> */}</>;
 };
 
 export default Home;

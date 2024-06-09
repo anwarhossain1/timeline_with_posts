@@ -1,22 +1,16 @@
-import path from "path";
-import fs from "fs";
-import matter from "gray-matter";
-import readingTime from "reading-time";
+export const getPostsData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const posts = await res.json();
+  return posts;
+};
+export const getUsersData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const users = await res.json();
+  return users;
+};
 
-export const getPostsData = () => {
-    const postsDirectory = path.join(process.cwd(), 'posts')
-    const fileNames = fs.readdirSync(postsDirectory)
-    return fileNames.map((fileName: any) => {
-        // 这里匹配 md 或者 mdx
-        const id = fileName.replace(/\.mdx?$/, '')
-        const fullPath = path.join(postsDirectory, fileName)
-        const fileContents = fs.readFileSync(fullPath, 'utf8')
-        const matterResult = matter(fileContents)
-        return {
-            id,
-            ...matterResult.data,
-            content: matterResult.content,
-            stats: readingTime(matterResult.content)
-        }
-    }).filter((post: any) => !post.draft)
-}
+export const getPostCommentsData = async () => {
+  const res = await fetch(" https://jsonplaceholder.typicode.com/comments");
+  const postComments = await res.json();
+  return postComments;
+};
