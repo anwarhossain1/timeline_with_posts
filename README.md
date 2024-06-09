@@ -1,14 +1,13 @@
-# NextBlog
+# Thoughts
 
-A minimal, responsive, and easy-to-use blog template.
+A minimal, responsive, and easy-to-use website.
 
 ### Introduction
 
-NextBlog is **True simplicity rather than simplicity**✨, it is a minimal, responsive, and easy-to-use blog template ⚡.
-
-Simple and clean, it is designed to place the reader's attention on what really matters: the content.
+This project is a React-based UI application that displays a "timeline" of posts using data fetched from three APIs. The application showcases the integration of user information, posts, and comments into a cohesive timeline view.
 
 ### Tech Stack
+
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [MDX](https://mdxjs.com/)
@@ -49,4 +48,3 @@ You only need to modify the configuration file content and write articles.
 10. [ ] **remark and rehype plugins**
 
 If you have any ideas, please let me know.
-
