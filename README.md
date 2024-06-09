@@ -6,6 +6,12 @@ A minimal, responsive, and easy-to-use website.
 
 This project is a React-based UI application that displays a "timeline" of posts using data fetched from three APIs. The application showcases the integration of user information, posts, and comments into a cohesive timeline view.
 
+### Live Link
+```
+https://timeline-with-posts-osvoioes0-anwarhossain1s-projects.vercel.app/
+```
+
+
 ### Tech Stack
 
 - [Next.js](https://nextjs.org/)
