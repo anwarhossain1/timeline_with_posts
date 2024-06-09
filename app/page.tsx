@@ -1,3 +1,4 @@
+import BlogContent from "@/components/blog-content";
 import { getMetadata } from "@/lib/utils";
 import type { Metadata } from "next";
 import {
@@ -28,7 +29,7 @@ const Home = async () => {
     };
   });
   console.log(timeLineContents);
-  return <>{/* <BlogContent posts={getPostsData()} /> */}</>;
+  return <>{timeLineContents && <BlogContent posts={timeLineContents} />}</>;
 };
 
 export default Home;
