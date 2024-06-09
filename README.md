@@ -16,15 +16,15 @@ This project is a React-based UI application that displays a "timeline" of posts
 
 ### How to use?
 
-NextBlog can be deployed with Vercel, with a single click.
+Thoughts can be deployed with Vercel, with a single click.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/imyuanli/next-blog)
 
 Than you can clone the repository and run the following commands:
 
 ```bash
-git clone
-cd next-blog
+git clone https://github.com/anwarhossain1/timeline_with_posts.git
+cd timeline_with_posts
 npm install
 npm run dev
 ```
@@ -32,19 +32,14 @@ npm run dev
 You only need to modify the configuration file content and write articles.
 
 - configuration file: `blog.config.ts`
-- article file: `posts/*.mdx`
 
 ### Features
 
 1. [x] **Mobile responsive**
 2. [x] **Comments**
-3. [x] **Search**
-4. [x] **SEO friendly**
-5. [ ] **Syntax highlighting**
-6. [ ] **Tags**
-7. [ ] **Pagination**
-8. [x] **Dark mode**
-9. [ ] **RSS**
-10. [ ] **remark and rehype plugins**
+3. [x] **SEO friendly**
+4. [x] **Syntax highlighting**
+5. [x] **Dark mode**
+
 
 If you have any ideas, please let me know.
