@@ -10,7 +10,6 @@ This project is a React-based UI application that displays a "timeline" of posts
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [MDX](https://mdxjs.com/)
 - [Shadcn-ui](https://ui.shadcn.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
