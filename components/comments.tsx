@@ -1,8 +1,9 @@
+import { IComment } from "@/app/page";
 import { ArrowBigDown, ArrowBigUp } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
-const Comments = ({ comments }) => {
+const Comments = ({ comments }: { comments: IComment[] }) => {
   const [openComment, setOpenComment] = useState<boolean>(false);
   return (
     <div>
@@ -17,8 +18,8 @@ const Comments = ({ comments }) => {
         </Button>
       </div>
       {openComment && (
-        <div className="space-y-4">
-          {comments.map((comment, index: number) => {
+        <div className="space-y-4 px-3">
+          {comments.map((comment: IComment, index: number) => {
             return (
               <div key={index}>
                 <div className="text-sm text-zinc-500">{comment.name}</div>
