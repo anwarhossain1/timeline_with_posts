@@ -18,7 +18,8 @@ const Home = async () => {
   const posts = await getPostsData();
   const users = await getUsersData();
   const postComments = await getPostCommentsData();
-  const timeLineContents = posts.map((post) => {
+  const sortedPostsInDescending = posts.sort((a, b) => b.id - a.id);
+  const timeLineContents = sortedPostsInDescending.map((post) => {
     return {
       title: post.title,
       body: post.body,
